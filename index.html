@@ -146,7 +146,6 @@
 <br>
 
 <div class = 'video'>
-    <button onclick="playPause()">Play/Pause</button> 
     <button onclick="makeBig()">Expand</button>
     <button onclick="makeSmall()">Shrink</button>
     <button onclick="makeNormal()">Normal</button>
@@ -175,28 +174,20 @@ Instagram: <a class="links" href='https://www.instagram.com/irish.dance.umich/'>
 
 <script> 
     var myVideo = document.getElementById('hype'); 
-    myVideo.width = window.innerWidth*.65
-    myVideo.height = window.innerHeight*.65
-    console.log(myVideo)
-    
-    function playPause() { 
-      if (myVideo.paused){ 
-        myVideo.play();} 
-      else {
-        myVideo.pause(); }
-    } 
     
     function makeBig() { 
         myVideo.width = 1000; 
-        console.log(myVideo.Width)
+        myVideo.height = 563
     } 
     
     function makeSmall() { 
         myVideo.width = 320; 
+        myVideo.height= 180
     } 
     
     function makeNormal() { 
-        myVideo.width = 853; 
+        myVideo.width = 871;
+        myVideo.height = 490
     } 
     </script> 
 </html>
