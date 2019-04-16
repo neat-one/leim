@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <script
+		src="http://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='css/html5reset.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <title>Upcoming Events</title>
+    <link rel="shortcut icon" href="images/shamrock.png" type="image/png">
+  </head>
+  <body>
+    <a href="#content" class="skip">Skip to Content</a>
+  <header>
+     
+        <h1>Upcoming Events</h1>
+        <br>
+      <nav>
+          <ul>
+              <li><a href='index.html' class='other'>About</a></li>
+              <li><a href='members.html' class='other'>Members</a></li>
+              <li><a href='photos.html' class='other'>Photos</a></li>
+              <li><a href='events.html' class='current'>Events</a></li>
+          </ul>
+        </nav>
+</header>
+<main id="content">
+
+    <div class="callout">
+        <div class="callout-header">Countdown to our Annual Show:</div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+        <div class="callout-container">
+          <p id="countdown"></p>
+        </div>
+      </div>
+
+<br>
+<br>
+  <div>
+      <button class="accordion">1/19/2019: Wild Irish Roses</button>
+    <div class = 'panel'>
+        <p>Our annual show will take place on January 19th, 2019 at 7pm. Guaranteeing
+        high kicks and fancy footwork, Léim's annual show is a fun celebration of
+        Irish step dancing. The show will include both soft and hard shoe
+        performances to fun and energetic music.</p>
+    </div>
+    <br>
+
+    <button class="accordion">3/30/2019: University of Dayton Feis</button>
+    <div class = 'panel'>
+      <p>
+        We will be traveling to Dayton, Ohio to compete in the Flyer's annual Irish
+        Dance Competition. We will be competing in the 2-hand, 4-hand, 8-hand, and
+        group numbers.
+      </p>
+  </div>
+
+    <button class="accordion">4/16/2019: SpringFest</button>
+    <div class = 'panel'>
+      <p>
+        Come check us out as we perform on stage at <a class="links" href='http://umichmusicmatters.com/sf17/'>SpringFest</a>, put on by Music
+        Matters. We will be performing 2-3 numbers and we promise it will not
+        disappoint!
+      </p>
+  </div>
+    <br>
+
+
+</div>
+<br>
+<br>
+<iframe class= "agenda" src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=umich.edu_2rolri7ps7uaf5csf2at52n6lg%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" title= "Leim Agenda" style="border-width:0" width="300" height="600" aria-labelledby="content"></iframe>
+<iframe class= "month" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=umich.edu_2rolri7ps7uaf5csf2at52n6lg%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" title="Leim Event Calendar" width="900" height="600" aria-labelledby="content"></iframe>
+<!-- <iframe class= "week" src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=umich.edu_2rolri7ps7uaf5csf2at52n6lg%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width="500" height="300" frameborder="0" scrolling="no"></iframe><footer class="footer">Last Updated: 2019 by Erin Neaton</footer> -->
+</main>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 23, 2020 19:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get todays date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+</body>
+</html>
