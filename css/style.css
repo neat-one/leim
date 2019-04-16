@@ -17,7 +17,7 @@ a.skip:focus{
 }
 
 a.current{
-    color: green;
+    color: black;
     font-style: italic;
     font-family: Georgia, serif;
     background: rgb(247, 143, 25);
@@ -68,7 +68,7 @@ a.current{
     height: 65%;
     width: 65%;
     padding: 1%;
-    /* text-align: center; */
+    text-align: center;
   }
 
   .hype{
