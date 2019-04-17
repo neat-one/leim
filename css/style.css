@@ -1,4 +1,7 @@
-
+body{
+    background-color: green
+}
+    
 a.other{
     color: white;
     font-size: 150%;
