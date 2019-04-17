@@ -3,7 +3,7 @@ body{
 }
 
 a.other{
-    color: black;
+    color: white ;
     font-size: 150%;
     /* -webkit-text-stroke: 1px black; */
 }
@@ -21,7 +21,7 @@ a.skip:focus{
 }
 
 a.current{
-    color: black;
+    color: white;
     font-style: italic;
     font-family: Georgia, serif;
     background: rgb(247, 143, 25);
@@ -117,6 +117,7 @@ nav ul{
     /* align-content: center; */
     /* padding-left: 5%; */
     margin: 10%;
+    background-color: black;
 }
 
 
