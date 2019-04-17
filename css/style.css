@@ -285,6 +285,7 @@ nav ul{
 
     nav ul li{
         display: inline-block;
+        background-color: #006500;
         width:25%;
         padding: 8px;
         min-height: 40px;
@@ -415,7 +416,7 @@ nav ul{
     nav ul li{
         display: inline-block;
         width:25%;
-        background: white;
+        background: #006500;
         padding: 10px;
         min-height: 30px;
         line-height: 30px;
@@ -555,6 +556,7 @@ footer{
 
     nav ul li{
         display: inline-block;
+        background-color: #006500;
         width:25%;
         padding: 8px;
         min-height: 40px;
