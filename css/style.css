@@ -222,7 +222,7 @@ nav ul{
   .callout-container {
     padding: 15px;
     background-color: orange;
-    color: white
+    color: black
   }
   
   .closebtn {
@@ -529,12 +529,12 @@ footer{
         font-size: 150%;
     }
     
-    address {
+    /* address {
         display: block;
         font-style: normal;
         color: white;
         font-size: 125%
-      }
+      } */
     .headerpic{
         display: block;
         margin-top: 2%;
