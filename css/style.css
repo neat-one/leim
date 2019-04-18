@@ -75,9 +75,9 @@ a.current{
     text-align: center;
   }
 
-  .hype{
-    height: 65%;
-    width: 65%;
+  #hype{
+    width:871;
+    height:490;
   }
 
 a.links{
