@@ -43,7 +43,7 @@
 
     <div class="callout">
         <div class="callout-header">Countdown to our Annual Show:</div>
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+        <span tabindex = '0' class="closebtn" onclick="this.parentElement.style.display='none';" onkeydown='goAway()'>×</span>
         <div class="callout-container">
           <p id="countdown"></p>
         </div>
@@ -140,7 +140,20 @@
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
-    </script>
+  
+</script>
+
+
+<!-- <script>
+
+window.addEventListener('keydown', function (e) {
+   	console.log(e.keyCode);
+    function goAway(){
+      if (e.keyCode == '13'){
+      this.parentElement.style.display='none';
+    }}});
+    
+</script> -->
 
 </body>
 </html>
